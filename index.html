@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+   <link rel="stylesheet" href="loaders.css">
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <title>Project ArtX</title>
+
+  <style>
+    body{background: #cadcf9}
+  </style>
+
+</head>
+
+<body>
+<nav id="navbar-site" class="navbar navbar-faded bg-teal navbar-expand-sm">
+  <a class="navbar-brand" href="#"><span class="text-teal">Live</span></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item"><a class="nav-link" href="#dashboard">Video</a></li>
+      <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+    </div><!-- navbar-nav -->
+  </ul><!-- container -->
+</nav>
+
+<div class="container">
+  <div class="content" id="navbar-site">
+
+<!-----------------------------CPF Script starts here  ----------------------------->    
+
+  
+<!-----------------------------CPF End Script ends here ---------------------------->    
+
+  </div>
+  <div class="content" id="dashboard">
+         <center>
+          <h2>
+              <div class="loader">
+                <div class="loader-inner ball-pulse-rise">
+                </div>
+              </div>
+          </h2>          
+          <main class="embed-responsive embed-responsive-16by9">
+          <div class="embed-responsive-item" style="max-width:854px"><div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://embed.ted.com/talks/lang/en/simon_sinek_how_great_leaders_inspire_action" width="854" height="480" style="position:absolute;left:0;top:0;width:100%;height:100%" frameborder="0" scrolling="no" allowfullscreen></iframe></div></div>
+          </main>          
+          </center>
+  </div>
+  <div class="content" id="about">
+    <h3>About</h3>
+    <p>
+      About the project
+    </p>
+  </div>
+
+</div><!-- content container -->
+    <!-- JS Container Testing defer -->
+   <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+   <script src="assets/js/popper.min.js"></script>
+   <script src="assets/js/bootstrap.min.js"></script>
+   <script scr="assets/js/cpfconfig.js" defer></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.js"></script>
+   <script src="loaders.css.js"></script>
+   <script>
+    $(document).ready(function(){
+      $('main').hide;
+
+      $(window).on({
+        load:function(){
+          $('.loader').hide();
+          $('main').show();
+        }
+      })
+    })
+    </script>
+</body>
+</html>
